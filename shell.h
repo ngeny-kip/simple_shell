@@ -123,8 +123,8 @@ void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /* toem_parser.c */
-int is_cmd(info_t *, char *);
-char *dup_chars(char *, int, int);
+int _executecmd(info_t *, char *);
+char *dupChars(char *, int, int);
 char *find_path(info_t *, char *, char *);
 
 /* loophsh.c */
@@ -180,8 +180,8 @@ void remove_comments(char *);
 
 /* toem_builtin.c */
 int exitshell(info_t *);
-int _changedir(info_t *);
-int _processdir(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
 
 /* toem_builtin1.c */
 int _myhistory(info_t *);
